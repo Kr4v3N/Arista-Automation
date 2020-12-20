@@ -4,25 +4,25 @@
 ![Paramiko 3.0.0](https://img.shields.io/badge/Paramiko-2.7.1-blue)
 
 
-#Arista-automation
+# Arista-automation
 
-Ce projet composé de 2 principaux scripts:
+Ce projet est composé de 2 principaux scripts:
 
-- NETWORKAPP : 
+- **NETWORKAPP :**
   - Cette application permet d'exécuter automatiquement les commandes contenues dans le fichier cmd.txt sur tous les périphériques Arista connectés.
   
-- CFGMNGNOTIFICATION : 
+- **CFGMNGNOTIFICATION :**
     - Ce script permet de surveiller les modifications de configuration sur l'un des commutateurs principeaux du réseau, puis envoyer un e-mail mettant en évidence tous les changements survenus au cours
 des dernières 24 heures.
 
 ## Prérequis
-- Environnement Linux (Testé sous Ubuntu 20.04.1 LTS)
+- Environnement Linux (Testé sous Ubuntu 20.04.1 LTS 64bits)
 - Installer Python 3
 ```
 sudo apt install python3
 ```
 
-- Installer Pip
+- Installer le gestionnaire de dépendances de Python3: Pip
 ```
 sudo apt install python3-pip
 ```
@@ -30,9 +30,12 @@ sudo apt install python3-pip
 ```
 pip3 install -r requirements.txt
 ```
+
+## Configuration des machines cibles
+
 ## Description
 
-Nous avons besoin de 3 fichiers texte. ces trois fichiers sont à configurer **avant l'execution du script**.
+Nous avons besoin de 3 fichiers texte, ces trois fichiers sont à configurer **avant l'execution du script**.
 
 Fichier qui contient les adresses IPs de nos périphériques réseau: **ip.txt**
 ```bash
