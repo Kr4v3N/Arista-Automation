@@ -19,12 +19,12 @@ des dernières 24 heures.
 - Environnement Linux (Testé sous Ubuntu 20.04.1 LTS 64bits)
 - Installer Python 3
 ```
-sudo apt install python3
+$ sudo apt install python3
 ```
 
 - Installer le gestionnaire de dépendances de Python3: Pip
 ```
-sudo apt install python3-pip
+$ sudo apt install python3-pip
 ```
 - Installer les modules nécessaires au fonctionnement des scripts
 ```
@@ -36,14 +36,34 @@ pip3 install -r requirements.txt
 ![](https://zupimages.net/up/20/51/xu66.png)
 
 2 - Installation VirtualBox
+- Pour installer la dernière version deVirtualBox, vous devez activer le référentiel 
+Multiverse sur votre système. Par défaut, ce référentiel est désactivé.
+```
+$ sudo add-apt-repository multiverse && sudo apt-get update
+```
+- Maintenant, entrez la commande suivante pour installer VirtualBox
+```
+$ sudo apt install virtualbox
+```
+3 - Installation de 3 VM **Arista EOS** 
+- Télécharger les fichiers **vEOS-lab-4.20.15M.vmdk** et **Aboot-veos-8.0.0.iso**:
+  https://www.arista.com/en/support/software-download
+- Puis les intègrer à VirtualBox
 
-3 - Installation Arista EOS VM
-
-4 - Configuration du PC local aux périphériques Arista sous Linux
+4 - Connexion du PC local aux machines vertuelles Arista sous Linux
+- Créer un adaptateur de bouclage afin de se connecter via cet adaptateur à nos machines vertuelles
+```
+$ sudo su
+# apt-get install uml-utilities
+# modprobe tun
+# tunctl  // Cela créera une interface de bouclage tap0
+# ifconfig tap0 10.10.10.100 netmask 255.255.255.0 up
+# ip a
+```
 
 ## Description
 
-Nous avons besoin de 3 fichiers texte, ces trois fichiers sont à configurer **avant l'execution du script**.
+Nous avons besoin de 3 fichiers texte, ces trois fichiers sont à configurer **avant l'exécution du script**.
 
 Fichier qui contient les adresses IPs de nos périphériques réseau: **ip.txt**
 ```bash
@@ -68,11 +88,13 @@ ntp server 10.10.10.150
 ```
 
 ## Usage
-1er script:
+**1er script:**
 ```bash
 python3 NetworkApp.py
 ```
-2ème script :
+
+**2ème script :**
+- Après avoir renseigné les identifiants Gmail executé le script config.py
 ```bash
 python3 config.py
 ```

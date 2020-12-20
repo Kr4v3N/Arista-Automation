@@ -1,7 +1,7 @@
 vlan 100
-name Ressources humaines
+name RH
 Vlan 200
 name IT
 Vlan 300
-name Comptabilité
+name Management
 ntp server 10.10.10.150
