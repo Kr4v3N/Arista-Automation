@@ -35,8 +35,10 @@ pip3 install -r requirements.txt
 1 - Présentation de la configuration du réseau:
 ![](https://zupimages.net/up/20/51/1krs.png)
 2 - Installation VirtualBox
+
 3 - Installation Arista EOS VM
-4 - Connexion du PC local au périphériques Arista sous Linux
+
+4 - Configuration du PC local aux périphériques Arista sous Linux
 
 ## Description
 
