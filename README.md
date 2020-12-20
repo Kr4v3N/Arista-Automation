@@ -9,7 +9,7 @@
 Ce projet est composé de 2 principaux scripts:
 
 - **NETWORKAPP :**
-  - Cette application permet d'exécuter automatiquement les commandes contenues dans le fichier cmd.txt sur tous les périphériques Arista connectés.
+  - Cette application permet d'exécuter automatiquement les commandes contenues dans le fichier cmd.txt sur tous les périphériques Arista connectés via SSH.
   
 - **CFGMNGNOTIFICATION :**
     - Ce script permet de surveiller les modifications de configuration sur l'un des commutateurs principeaux du réseau, puis envoyer un e-mail mettant en évidence tous les changements survenus au cours
@@ -31,7 +31,12 @@ sudo apt install python3-pip
 pip3 install -r requirements.txt
 ```
 
-## Configuration des machines cibles
+## Configuration de l'environnement de test
+1 - Présentation de la configuration du réseau:
+![](https://zupimages.net/up/20/51/1krs.png)
+2 - Installation VirtualBox
+3 - Installation Arista EOS VM
+4 - Connexion du PC local au périphériques Arista sous Linux
 
 ## Description
 
