@@ -33,7 +33,8 @@ pip3 install -r requirements.txt
 
 ## Configuration de l'environnement de test
 1 - Présentation de la configuration du réseau:
-![](https://zupimages.net/up/20/51/1krs.png)
+![](https://zupimages.net/up/20/51/xu66.png)
+
 2 - Installation VirtualBox
 
 3 - Installation Arista EOS VM
