@@ -1,0 +1,5 @@
+vlan 100
+name Management
+Vlan 200
+name IT
+ntp server 10.10.10.150
