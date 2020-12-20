@@ -53,7 +53,6 @@ with open(device_cfg_old, 'r') as old_file, \
 fromaddr = 'test@gmail.com'
 toaddr = 'test@gmail.com'
 
-# En savoir plus sur MIME et multipart: https://en.wikipedia.org/wiki/MIME#Multipart_messages
 msg = MIMEMultipart()
 msg['From'] = fromaddr
 msg['To'] = toaddr
