@@ -7,22 +7,11 @@ transceiver qsfp default-mode 4x10G
 !
 hostname Arista2
 !
-ntp server 10.10.10.150
-!
 spanning-tree mode mstp
 !
 no aaa root
 !
 username admin role network-admin secret sha512 $6$dc5FpwILAte.08UZ$5rJlIjOY7nluMVJ/MVmf6qVyLXksZSx8o/Pl0PcJTHYvSuv805a6BUshiP6FdHl2EIJZ20ZxRa9aatV.ZbdmU.
-!
-vlan 100
-   name RH
-!
-vlan 200
-   name IT
-!
-vlan 300
-   name Comptabilit
 !
 interface Loopback0
    ip address 2.2.2.2/24
