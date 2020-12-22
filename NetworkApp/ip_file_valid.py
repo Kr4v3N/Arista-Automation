@@ -16,7 +16,7 @@ def ip_file_valid():
         sys.exit()
     # Ouvrir le fichier sélectionné par l'utilisateur pour la lecture (fichier d'adresses IP)
     selected_ip_file = open(ip_file, 'r')
-    # Commnecer à partir du début du fichier
+    # Commencer à partir du début du fichier
     selected_ip_file.seek(0)
     # Lecture de chaque ligne (adresse IP) du fichier
     ip_list = selected_ip_file.readlines()

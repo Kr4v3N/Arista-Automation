@@ -8,10 +8,10 @@
 
 Ce projet est composé de 2 principaux scripts:
 
-- **NETWORKAPP :**
+- **NetworkApp :**
   - Cette application permet d'exécuter automatiquement les commandes contenues dans le fichier cmd.txt sur tous les périphériques Arista connectés via SSH.
   
-- **CFGMNGNOTIFICATION :**
+- **CfgMngNotification :**
     - Ce script permet de surveiller les modifications de configuration sur l'un des commutateurs principaux du réseau, puis envoyer un e-mail mettant en évidence tous les changements survenus au cours
 des dernières 24 heures.
 
