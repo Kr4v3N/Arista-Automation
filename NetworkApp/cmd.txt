@@ -4,4 +4,4 @@ Vlan 200
 name IT
 Vlan 300
 name Management
-ntp server 10.10.10.150
+ntp server 10.10.10.170

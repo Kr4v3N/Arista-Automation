@@ -22,5 +22,5 @@ def ip_file_valid():
     ip_list = selected_ip_file.readlines()
     # Fermeture du fichier
     selected_ip_file.close()
-    # Renvoie la listes des adresses IP
+    # Renvoie la liste des adresses IP
     return ip_list

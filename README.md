@@ -12,7 +12,7 @@ Ce projet est composé de 2 principaux scripts:
   - Cette application permet d'exécuter automatiquement les commandes contenues dans le fichier cmd.txt sur tous les périphériques Arista connectés via SSH.
   
 - **CFGMNGNOTIFICATION :**
-    - Ce script permet de surveiller les modifications de configuration sur l'un des commutateurs principeaux du réseau, puis envoyer un e-mail mettant en évidence tous les changements survenus au cours
+    - Ce script permet de surveiller les modifications de configuration sur l'un des commutateurs principaux du réseau, puis envoyer un e-mail mettant en évidence tous les changements survenus au cours
 des dernières 24 heures.
 
 ## Prérequis
@@ -32,10 +32,8 @@ pip3 install -r requirements.txt
 ```
 
 ## Configuration de l'environnement de test
-1 - Présentation de la configuration du réseau:
-![](https://zupimages.net/up/20/51/xu66.png)
 
-2 - Installation VirtualBox
+1 - Installation VirtualBox
 - Pour installer la dernière version deVirtualBox, vous devez activer le référentiel 
 Multiverse sur votre système. Par défaut, ce référentiel est désactivé.
 ```
@@ -45,12 +43,12 @@ $ sudo add-apt-repository multiverse && sudo apt-get update
 ```
 $ sudo apt install virtualbox
 ```
-3 - Installation de 3 VM **Arista EOS** 
+2 - Installation de 3 VM **Arista EOS** 
 - Télécharger les fichiers **vEOS-lab-4.20.15M.vmdk** et **Aboot-veos-8.0.0.iso**:
   https://www.arista.com/en/support/software-download
 - Puis les intègrer à VirtualBox
 
-4 - Connexion du PC local aux machines vertuelles Arista sous Linux
+3 - Connexion du PC local aux machines vertuelles Arista sous Linux
 - Créer un adaptateur de bouclage afin de se connecter via cet adaptateur à nos machines vertuelles
 ```
 $ sudo su
