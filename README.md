@@ -6,7 +6,7 @@
 
 # Arista-automation
 
-Ce projet est composé de 2 principaux scripts:
+Ce projet est composé de 2 principaux scripts :
 
 - **NetworkApp :**
   - Cette application permet d'exécuter automatiquement les commandes contenues dans le fichier cmd.txt sur tous les périphériques Arista connectés via SSH.
@@ -22,7 +22,7 @@ des dernières 24 heures.
 $ sudo apt install python3
 ```
 
-- Installer le gestionnaire de dépendances de Python3: Pip
+- Installer le gestionnaire de dépendances de Python3 : Pip
 ```
 $ sudo apt install python3-pip
 ```
@@ -61,20 +61,20 @@ $ sudo su
 
 ## Description
 
-Nous avons besoin de 3 fichiers texte, ces trois fichiers sont à configurer **avant l'exécution du script**.
+Nous avons besoin de 3 fichiers textes, ces trois fichiers sont à configurer **avant l'exécution du script**.
 
-Fichier qui contient les adresses IPs de nos périphériques réseau: **ip.txt**
+Fichier qui contient les adresses IPs de nos périphériques réseaux : **ip.txt**
 ```bash
 10.10.10.2
 10.10.10.3
 10.10.10.4
 ```
-Fichier qui contient les identifiants utilisés pour ce connecter à chaque switch: **user.txt**
+Fichier qui contient les identifiants utilisés pour se connecter à chaque switch : **user.txt**
 ```bash
 admin,password
 ```
 
-Fichier qui contient les commandes que nous voulons exécuter: **cmd.txt** 
+Fichier qui contient les commandes que nous voulons exécuter : **cmd.txt** 
 ```bash
 vlan 100
 name Management
