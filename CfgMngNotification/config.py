@@ -22,7 +22,8 @@ command = 'show running'
 
 
 # Connexion à l'appareil via SSH
-session = ConnectHandler(device_type=device_type, ip=ip, username=username, password=password, global_delay_factor=3)
+session = ConnectHandler(device_type=device_type, ip=ip, username=username, password=password,
+                         global_delay_factor=3)
 
 # Entrer en mode d'activation
 enable = session.enable()

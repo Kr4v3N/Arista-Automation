@@ -10,7 +10,7 @@ import sys
 
 # Vérification des octets
 def ip_addr_valid(list):
-    # On utilise une boucle for pour parcourit la liste des adresses IP
+    # On utilise une boucle for pour parcourir la liste des adresses IP
     for ip in list:
         # On supprime les caractères \n à la fin de la chaîne
         ip = ip.rstrip("\n")
